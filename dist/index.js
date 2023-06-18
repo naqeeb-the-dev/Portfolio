@@ -51,20 +51,20 @@ function addflutter() {
 }
 
 Array(100).fill().forEach(addflutter);
-function addfirebase() {
-  const geometry = new THREE.BoxGeometry(1,1,1);
-  const material = new THREE.TextureLoader().load('firebase.svg');
-  const firebase = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({map: material}));
+// function addfirebase() {
+//   const geometry = new THREE.BoxGeometry(1,1,1);
+//   const material = new THREE.TextureLoader().load('firebase.svg');
+//   const firebase = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({map: material}));
 
-  const [x, y, z] = Array(3)
-    .fill()
-    .map(() => THREE.MathUtils.randFloatSpread(200));
+//   const [x, y, z] = Array(3)
+//     .fill()
+//     .map(() => THREE.MathUtils.randFloatSpread(200));
 
-  firebase.position.set(x, y, z);
-  scene.add(firebase);
-}
+//   firebase.position.set(x, y, z);
+//   scene.add(firebase);
+// }
 
-Array(100).fill().forEach(addfirebase);
+// Array(100).fill().forEach(addfirebase);
 // Background
 
 const backTexture = new THREE.TextureLoader().load('back.jpg');
